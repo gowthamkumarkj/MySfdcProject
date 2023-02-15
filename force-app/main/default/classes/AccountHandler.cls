@@ -1,14 +1,16 @@
 public class AccountHandler {
-
-    public static Account insertNewAccount(String AccountName){
-        try {
-            Account newacct = new Account(Name=AccountNAME);
-            insert newacct;
-            return newacct;
-        } catch (DmlException e) {
-            System.debug('A DML exception has occurred: ' +
-                        e.getMessage());
-            return null;
+    public static void insertAccount (Integer value){
+        List<Account> addAccounts =new List<Account>();
+        
+        Integer N = 1;
+        While(N<=value){
+            Account acc = new Account();
+            acc.Name ='Acme Inc N'+N;
+            aCC.AccountNumber ='A000n'+N;
+            addAccounts.add(acc);
+            system.debug(addAccounts);
+            N=N+1;
         }
-    }
+        Insert addAccounts;        
+    } 
 }

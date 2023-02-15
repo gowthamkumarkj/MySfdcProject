@@ -2,8 +2,7 @@ public class EmailManager {
     // Public method
     public static void sendMail(String address, String subject, String body) {
         // Create an email message object
-        Messaging.SingleEmailMessage mail = 
-            new Messaging.SingleEmailMessage();
+        Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
         String[] toAddresses = new String[] {address};
         mail.setToAddresses(toAddresses);
         mail.setSubject(subject);
@@ -18,8 +17,7 @@ public class EmailManager {
     // Helper method
     private static Boolean inspectResults(Messaging.SendEmailResult[] results) {
         Boolean sendResult = true;
-        // sendEmail returns an array of result objects.Code Coverage: None
-        // Iterate through the list to inspect results. 
+        // sendEmail returns an array of result objects.
         // Iterate through the list to inspect results. 
         // In this class, the methods send only one email, 
         // so we should have only one result.
