@@ -1,0 +1,7 @@
+<apex:page >
+<h1>Let’s start chatting...</h1>
+<br />
+Click the button to start a chat.
+<br />
+[PASTE YOUR SNAP-INS CODE SNIPPET HERE]
+</apex:page>
